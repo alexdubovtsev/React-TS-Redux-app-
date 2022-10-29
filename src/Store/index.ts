@@ -2,11 +2,11 @@
 import thunk from 'redux-thunk';
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { userReducer } from './Redusers/userReducer';
-//import { todoReducer } from './Redusers/todoReducer';
+import { todoReducer } from './Redusers/todoReducer';
 
 const rootReducer = combineReducers({
   user: userReducer,
-  //todo: todoReducer,
+  todo: todoReducer,
 })
 
 // Дефолтный useSelector с типами не дружит, поэтому делаем свой хук и получаем тип редюсера
